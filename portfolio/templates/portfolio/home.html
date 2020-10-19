@@ -7,6 +7,10 @@
 </head>
 <body>
     <h1>Farishta's Portfolio</h1>
+    
+    {% load static %}
+    <a href="{% static 'portfolio/CV.pdf'  %}">Resume</a>
+    <img src="{% static 'portfolio/me.jpg' %}" alt="Farishta" height="600" width="500">
 
     {% for project in projects %}
 
